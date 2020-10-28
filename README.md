@@ -1,3 +1,11 @@
+# jenkins version
+
+Go to your /var/lib/jenkins/ there will be a file called config.xml
+
+View that file cat config.xml and there should be a xml entry called:
+
+<version>YourVersionNumber</version>
+
 # Introduction to Declarative Pipelines
 
 ## https://github.com/cloudbees/intro-to-declarative-pipeline
