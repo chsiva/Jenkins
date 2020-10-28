@@ -1,0 +1,33 @@
+https://www.vultr.com/docs/how-to-install-jenkins-on-centos-7
+
+sudo yum install epel-release
+    2  sudo yum update
+    3  sudo reboot
+    4  sudo yum install java-1.8.0-openjdk.x86_64
+    5  java -version
+    6  sudo cp /etc/profile /etc/profile_backup
+    7  echo 'export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk' | sudo tee -a /etc/profile
+    8  echo 'export JRE_HOME=/usr/lib/jvm/jre' | sudo tee -a /etc/profile
+    9  source /etc/profile
+   10  echo $JAVA_HOME
+   11  echo $JRE_HOME
+   12  cd ~
+   13  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   14  sudo yum install wget
+   15  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   16  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   17  yum install jenkins
+   18  sudo yum install jenkins
+   19  sudo systemctl start jenkins.service
+   20  sudo systemctl enable jenkins.service
+   21  sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp
+   22  sudo cat /var/lib/jenkins/secrets/initialAdminPassword   #to get initial passwd
+   23  sudo cat /var/lib/jenkins/secrets/initialAdminPassword  
+
+    grep jenkins /etc/passwd
+    sudo su - jenkins -s/bin/bash  to logon as jenkins users
+    cd .ssh
+
+    in build: Triggering ansible playbook from Jenkins
+    ssh centos@ip "ansible-playbook main.yml"
+    scp  /var/lib/jenkins/ansible-files/main.yml centos@ip:/home/centos
