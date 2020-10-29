@@ -1,3 +1,8 @@
+# Jenkins (CI/CD)
+1. Worked on Continuous Integration/ Continuous Deployment tools (Jenkins) involved in duties for auto deployment such as creating (pipeline projects, Freestyle projects), continuously (pulling code from developers, code testing, deploying, and committing changes).
+2. Developed many pipelines using Jenkins such as triggering job when a new commit happens in GitHub, snapshot process and s3 buckets, deployment of the             applications into the ec2 servers using the CI/CD pipeline in Jenkins.
+
+
 # jenkins version
 
 Go to your /var/lib/jenkins/ there will be a file called config.xml
