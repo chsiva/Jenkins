@@ -18,6 +18,24 @@ Step1: Code -> integrate with github (commits are pushed)
 Step 2: Continous integration -> biuld -> test junit/selinium (notify test results) -> sonarqube (artifactory)-> white source (seccurity)
 Step3: Continous Deployment -> dev, QA, Stage, prod
 
+# Pipeline
+A Pipeline is a user-defined model of a CD pipeline. A Pipeline’s code defines your entire build process, which typically includes stages for building an application, testing it and then delivering it.
+
+Also, a pipeline block is a key part of Declarative Pipeline syntax.
+
+# Node
+A node is a machine which is part of the Jenkins environment and is capable of executing a Pipeline.
+
+Also, a node block is a key part of Scripted Pipeline syntax.
+
+# Stage
+A stage block defines a conceptually distinct subset of tasks performed through the entire Pipeline (e.g. "Build", "Test" and "Deploy" stages), which is used by many plugins to visualize or present Jenkins Pipeline status/progress. [6]
+
+# Step
+A single task. Fundamentally, a step tells Jenkins what to do at a particular point in time (or "step" in the process). For example, to execute the shell command make use the sh step: sh 'make'. When a plugin extends the Pipeline DSL, [1] that typically means the plugin has implemented a new step.
+
+
+
 # scripted vs Declarative pipelines
 
 The key difference between Declarative pipeline and Scripted pipeline would be with respect to their syntaxes and their flexibility. 
