@@ -12,6 +12,9 @@ View that file cat config.xml and there should be a xml entry called:
 
 <version>YourVersionNumber</version>
 
+# What is a Jenkinsfile?
+Jenkins pipelines can be defined using a text file called Jenkinsfile. You can implement pipeline as code using Jenkinsfile, and this can be defined by using a domain-specific language (DSL). With Jenkinsfile, you can write the steps needed for running a Jenkins pipeline.
+
 # CI CD process
 
 Step1: Code -> integrate with github (commits are pushed)  
@@ -53,6 +56,17 @@ Declarative pipeline is a relatively new feature that supports the pipeline as c
 Whereas, the scripted pipeline is a traditional way of writing the code. In this pipeline, the Jenkinsfile is written on the Jenkins UI instance. 
 
 Though both these pipelines are based on the groovy DSL, the scripted pipeline uses stricter groovy based syntaxes because it was the first pipeline to be built on the groovy foundation. Since this Groovy script was not typically desirable to all the users, the declarative pipeline was introduced to offer a simpler and more optioned Groovy syntax.
+
+# How Does a Multi-Branch Pipeline work?
+
+I will walk you through a basic build and deployment workflow to understand how a multi-branch pipeline work.
+
+Let’s say I want a Jenkins pipeline to build and deploy an application with the following conditions.
+
+Development starts with a feature branch by developers committing code to the feature branch. 
+Whenever a developer raises a PR from the feature branch to develop a branch, a Jenkins pipeline should trigger to run a unit test and static code analysis. 
+After testing the code successfully in the feature branch, the developer merges the PR to the develop branch.
+When the code is ready for release, developers raise a PR from the develop branch to the master. It should trigger a build pipeline that will run the unit test cases, code analysis, push artifact, and deploys it to dev/QA environments.
 
 
 # Introduction to Declarative Pipelines
