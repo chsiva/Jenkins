@@ -18,6 +18,14 @@ Step1: Code -> integrate with github (commits are pushed)
 Step 2: Continous integration -> biuld -> test junit/selinium (notify test results) -> sonarqube (artifactory)-> white source (seccurity)
 Step3: Continous Deployment -> dev, QA, Stage, prod
 
+# WhiteSource 
+identifies every open source component in your software, including dependencies. It then secures you from vulnerabilities and enforces license policies throughout the software development lifecycle.
+
+Pipeline Support
+Jenkins version 2. x or later.
+Pipeline plugin installed.
+WhiteSource plugin version 1.8. x or later.
+
 # Pipeline
 A Pipeline is a user-defined model of a CD pipeline. A Pipeline’s code defines your entire build process, which typically includes stages for building an application, testing it and then delivering it.
 
