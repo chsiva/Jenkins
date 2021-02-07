@@ -12,6 +12,23 @@ View that file cat config.xml and there should be a xml entry called:
 
 <version>YourVersionNumber</version>
 
+# CI CD process
+
+Step1: Code -> integrate with github (commits are pushed)  
+Step 2: Continous integration -> biuld -> test junit/selinium (notify test results) -> sonarqube (artifactory)-> white source (seccurity)
+Step3: Continous Deployment -> dev, QA, Stage, prod
+
+# scripted vs Declarative pipelines
+
+The key difference between Declarative pipeline and Scripted pipeline would be with respect to their syntaxes and their flexibility. 
+
+Declarative pipeline is a relatively new feature that supports the pipeline as code concept. It makes the pipeline code easier to read and write. This code is written in a Jenkinsfile which can be checked into a source control management system such as Git.
+
+Whereas, the scripted pipeline is a traditional way of writing the code. In this pipeline, the Jenkinsfile is written on the Jenkins UI instance. 
+
+Though both these pipelines are based on the groovy DSL, the scripted pipeline uses stricter groovy based syntaxes because it was the first pipeline to be built on the groovy foundation. Since this Groovy script was not typically desirable to all the users, the declarative pipeline was introduced to offer a simpler and more optioned Groovy syntax.
+
+
 # Introduction to Declarative Pipelines
 
 ## https://github.com/cloudbees/intro-to-declarative-pipeline
