@@ -15,7 +15,7 @@ View that file cat config.xml and there should be a xml entry called:
 # CI CD process
 
 Step1: Code -> integrate with github (commits are pushed)  
-Step 2: Continous integration -> biuld -> test junit/selinium (notify test results) -> sonarqube (artifactory)-> white source (seccurity)
+Step 2: Continous integration -> biuld -> test junit/selinium (notify test results) --> white source (seccurity)
 Step3: Continous Deployment -> dev, QA, Stage, prod
 
 # WhiteSource 
