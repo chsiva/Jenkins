@@ -1,8 +1,9 @@
 # Jenkins (CI/CD)
-1. Worked on Continuous Integration/ Continuous Deployment tools (Jenkins) involved in duties for auto deployment such as creating (pipeline projects, Freestyle projects), continuously (pulling code from developers, code testing, deploying, and committing changes).
-2. Developed many pipelines using Jenkins such as triggering job when a new commit happens in GitHub, snapshot process and s3 buckets, deployment of the             applications into the ec2 servers using the CI/CD pipeline in Jenkins.
-3. Also, deploying the jars, created by maven and pushing docker images. I used Jenkins and created pipeline to deploy on to the target node/machine.
+So, whenever I wanted to make some changes to the existing code and then I wanted to push it. Like I want to deploy to the relavant environment (dev). What I do is like I come into my IDE.Or like whatever application we used and once the code is pushed then we raise a merge request where a dev will be reviewing it and  So once I get an approval from developer the for the merge request and the merge is done. It gets into the development branch, if we wanted to deploy to the production environment on the master, again we need to request a merge in publishing to master (prod). Once it merged the Jenkins pipeline will be triggered. 
 
+So Once merge is done, CI CD process starts off. And when the CICD process Kicked off, about what we're doing. Once it goes into Packer golden entity called an ami that kicks off. we have setup what this process need to be done. Let say then one set of the packer golden ami images process kicks off. So once this process is triggered and it continues. The Second Step is like we have attached to the docker containers. So once the ami image is done, these artifacts will be store into the docker registry. Once it stored then it starts getting into CD deployment. 
+
+When it's time to deployment it uses the repository code to delpoy it into the relevant environment. And then all metadata programs or like bootstrappingsteps will be carried out.  After the process is completed, kicks off a notification saying that you're build is done and your infrastructure is deployed. Finally, we can go the relevant environment and see the application
 
 # jenkins version
 
