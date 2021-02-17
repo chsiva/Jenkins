@@ -5,6 +5,11 @@ So Once merge is done, CI CD process starts off. And when the CICD process Kicke
 
 When it's time to deployment it uses the repository code to delpoy it into the relevant environment. And then all metadata programs or like bootstrappingsteps will be carried out.  After the process is completed, kicks off a notification saying that you're build is done and your infrastructure is deployed. Finally, we can go the relevant environment and see the application
 
+
+# jenkins plugins used.
+
+
+
 # jenkins version
 
 Go to your /var/lib/jenkins/ there will be a file called config.xml
