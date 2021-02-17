@@ -7,8 +7,15 @@ When it's time to deployment it uses the repository code to delpoy it into the r
 
 
 # jenkins plugins used.
+SCM Plugin (GITHUb), Folders, metrics, kubentes, ECS, pipeline, performance, Junit and much more.
 
+# jenkins security
 
+Using role based acess is good. This is configured on the top level based. Lets say like developer or normal user based group. These group will be linked to the Active Directory behind the seen. And one a sailpoint request is raised and approved then the relevant group will get aprropriate permissions.
+
+There is a Role based automation plugin for jenkins. where we can create and assign the privilages to the users/group
+
+With Azure active directory.
 
 # jenkins version
 
