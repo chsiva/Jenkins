@@ -17,6 +17,9 @@ There is a Role based automation plugin for jenkins. where we can create and ass
 
 With Azure active directory.
 
+# jenkins issues
+
+
 # jenkins version
 
 Go to your /var/lib/jenkins/ there will be a file called config.xml
