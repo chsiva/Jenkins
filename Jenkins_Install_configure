@@ -33,7 +33,14 @@ sudo yum install epel-release
 
 -------
 Git plugin will be installed already, install git on your localhost and /usr/bin/git as executable path in "Manage Jenkins > Global Tool Config > Git Installations"
+--------
 
+Runs a shell script (defaults to sh, but this is configurable) for building the project.
+
+If you go to Manage Jenkins --> Configure System you will find an option (called "Shell executable") to set the name or absolute path to the shell that you want your shell scripts to use...
+
+For my system without configuring this option... it uses bash!
+----------
     in build: Triggering ansible playbook from Jenkins
     ssh centos@ip "ansible-playbook main.yml"
     scp  /var/lib/jenkins/ansible-files/main.yml centos@ip:/home/centos
