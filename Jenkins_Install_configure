@@ -20,6 +20,10 @@ sudo yum install epel-release
    19  sudo systemctl start jenkins.service
    20  sudo systemctl enable jenkins.service
    21  sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp
+   
+  Note:  "IN security inbound rule add custom tcp 8080 port" and use "http://<your-Vultr-server-IP>:8080" to open jenkins in chrome
+  
+  
    22  sudo cat /var/lib/jenkins/secrets/initialAdminPassword   #to get initial passwd
    23  sudo cat /var/lib/jenkins/secrets/initialAdminPassword  
 
