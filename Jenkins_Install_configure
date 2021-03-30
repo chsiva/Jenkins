@@ -12,7 +12,6 @@ sudo yum install epel-release
    10  echo $JAVA_HOME
    11  echo $JRE_HOME
    12  cd ~
-   13  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
    14  sudo yum install wget
    15  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
    16  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
