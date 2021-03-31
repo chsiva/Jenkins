@@ -22,4 +22,5 @@ pipeline{
     }
 }
 
+Create IAM role and attach it to the credentials before to access to the cloud
 
