@@ -1,3 +1,7 @@
+You need Terraform, Git integrated within Jenkins and configure the path
+
+You will start the pipeline project and the pipeline will be as follows
+
 pipeline{
     agent any
     tools {
