@@ -1,0 +1,18 @@
+pipeline{
+    agent any
+    tools {
+        terraform 'terraform-11'
+    }
+    stages{ 
+        stage('Git Checkout'){
+            steps{
+               git credentialsId: 'id-here', url: 'path-to-code'
+            }
+        }
+        stage('Terraform init') {
+            steps{
+                sh 'terraform init'
+            }
+        }
+    }
+}
