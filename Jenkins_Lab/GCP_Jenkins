@@ -1,0 +1,13 @@
+To configure credentials
+# Prerequsites.> create a Service account and assign roles below
+1. Compute Instance Admin (v1)
+2. Compute Network Admin
+3. Editor
+
+Step1: Install plugins 
+       Now Jenkins -> Manage jenkins -> Manage plugins -> Google OAuth plugin (For storing Secrets) -> GCE & Storage plugin
+       
+Step2:  Upload the secret json file of the service account
+Dashboard -> Credentials -> System -> Global credentials (unrestricted) -> Add Credentials - Google service account from a private key ( Give Project ID & upload the json file)
+
+
