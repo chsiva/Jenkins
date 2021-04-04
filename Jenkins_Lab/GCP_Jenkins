@@ -12,7 +12,7 @@ Dashboard -> Credentials -> System -> Global credentials (unrestricted) -> Add C
 
 
 
-To upload objects to s3 from jenkins server
+# To upload objects to s3 from jenkins server
 
 Use GCP storage upload
 select credentials
