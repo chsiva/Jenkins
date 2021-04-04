@@ -1,0 +1,8 @@
+sudo /etc/init.d/jenkins restart
+sudo service jenkins status
+sudo service jenkins start
+sudo service jenkins stop
+sudo service jenkins restart
+
+
+To safely restart -> Manage jenkins -> Safe Restart Plugin (Install) -> Jenkins home page right suide you can see plugin
