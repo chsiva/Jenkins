@@ -10,7 +10,10 @@ Step1: Install plugins
 Step2:  Upload the secret json file of the service account
 Dashboard -> Credentials -> System -> Global credentials (unrestricted) -> Add Credentials - Google service account from a private key ( Give Project ID & upload the json file)
 
+Step3: ADD Cloud env
+       Jenkins-> Configure system -> Configure clouds-> Add new cloud  ( name, ProjectID, Creds) - use label to run jenkins on specific node)
 
+Reference: https://darecode.com/en/blog/how-to-configure-jenkins-with-google-cloud-platform/
 
 # To upload objects to s3 from jenkins server
 
@@ -18,3 +21,9 @@ Use GCP storage upload
 select credentials
 File pattern: path of the file ( hint: use workspace path - /var/lib/jenkins/workspace/rungcp)
 storage location: gs://sidivayv
+
+
+
+change workspace directory
+
+https://stackoverflow.com/questions/34854377/how-to-change-workspace-and-build-record-root-directory-on-jenkins/44270337
