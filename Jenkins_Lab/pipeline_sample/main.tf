@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = "${file("/opt/gcp/service-account.json")}"
+  credentials = "${SVC_ACCOUNT_KEY}"
   project = "testingpjct-dev"
   region = "us-central1"
   zone = "us-central1-c"
