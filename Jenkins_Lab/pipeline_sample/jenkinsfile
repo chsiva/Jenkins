@@ -4,6 +4,7 @@ pipeline {
   environment {
       tf_version = '0.14.9'
       config_path = '/var/lib/jenkins/workspace/testpipeline'
+      SVC_ACCOUNT_KEY = credentials('testingpjct-dev')
     }
 
     parameters {
@@ -21,7 +22,7 @@ pipeline {
                  load "${config_path}/parameters.groovy"
 
                  sh '''#!/bin/bash -l
-
+                 
                  # Setting up Terraform in build environment
                  echo "Downloading Terraform ${tf_version}"
                  wget -q https://releases.hashicorp.com/terraform/${tf_version}/terraform_${tf_version}_linux_amd64.zip
@@ -31,7 +32,7 @@ pipeline {
 
                  # Remove previous terraform modules
                  rm -rf .terraform
-
+                  
                  # Setups up Terraform state file and source modules
                  set -x #Turns on screen outputs
                  ./terraform init
