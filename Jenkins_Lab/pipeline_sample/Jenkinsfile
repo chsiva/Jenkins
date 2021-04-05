@@ -4,7 +4,6 @@ pipeline {
   environment {
       tf_version = '0.14.9'
       config_path = '/var/lib/jenkins/workspace/testpipeline'
-      SVC_ACCOUNT_KEY = credentials('testingpjct-dev')
     }
 
     parameters {
