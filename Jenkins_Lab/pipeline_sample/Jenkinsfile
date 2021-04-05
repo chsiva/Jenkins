@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage('TerraRising') {
             steps {
-                 load "${config_path}/parameters.groovy"
+
 
                  sh '''#!/bin/bash -l
                  
