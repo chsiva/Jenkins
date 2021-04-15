@@ -1,0 +1,15 @@
+Configure Job as free style: 
+Build Environment: Use secret text(s) or file(s) 
+Upload key: Varaile: <give-value>
+
+gcloud auth activate-service-account --key-file=${<give-value>}
+gsutil ls
+gsutil cp gs://sidivayv/try.sh /var/lib/jenkins/workspace/gcloudServiceAccountBinding
+gsutil cp -r /var/lib/jenkins/workspace/gcloudServiceAccountBinding gs://sidivayv12/test1/
+
+# -r for folder
+
+# Alternative:
+	
+Google Cloud Storage plugin
+This plugin provides the “Google Cloud Storage Uploader” post-build step for publishing build artifacts to Google Cloud Storage.
