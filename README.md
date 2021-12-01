@@ -5,6 +5,17 @@ So Once merge is done, CI CD process starts off. And when the CICD process Kicke
 
 When it's time to deployment it uses the repository code to delpoy it into the relevant environment. And then all metadata programs or like bootstrappingsteps will be carried out.  After the process is completed, kicks off a notification saying that you're build is done and your infrastructure is deployed. Finally, we can go the relevant environment and see the application
 
+// Jenkinsfile (Declarative Pipeline)
+pipeline {
+  agent any
+  stages {
+    stage('Stage 1') {
+      steps {
+        echo 'Hello world!'
+      }
+    }
+  }
+}
 
 # jenkins plugins used.
 SCM Plugin (GITHUb), Folders, metrics, kubentes, ECS, pipeline, performance, Junit and much more.
