@@ -30,6 +30,21 @@ Jenkins > Declarative pipeline with using shared libraries
 | **Typical Users**            | Developers, security teams focusing on dependency risks                            | DevOps, SecOps teams managing container/cloud security           |
 | **Fail Build on Violation**  | Yes, based on policy setup                                                         | Yes, based on vulnerability or compliance rules                  |
 
+# Veracode scan vs other
+Veracode is a full-stack application security platform combining SAST, DAST, and SCA, mostly SaaS-based and focused on enterprise security.
+
+
+Checkmarx specializes in SAST, excellent for deep source code security analysis.
+
+
+SonarQube is primarily for code quality, but includes some static security analysis features.
+
+
+Nexus IQ focuses on open-source dependency security and license compliance.
+
+
+They are often used together in mature pipelines to cover code quality, security, and open-source risks comprehensively.
+
 
 # Jenkins (CI/CD)
 So, whenever I wanted to make some changes to the existing code and then I wanted to push it. Like I want to deploy to the relavant environment (dev). What I do is like I come into my IDE.Or like whatever application we used and once the code is pushed then we raise a merge request where a dev will be reviewing it and  So once I get an approval from developer the for the merge request and the merge is done. It gets into the development branch, if we wanted to deploy to the production environment on the master, again we need to request a merge in publishing to master (prod). Once it merged the Jenkins pipeline will be triggered. 
