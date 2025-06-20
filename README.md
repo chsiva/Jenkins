@@ -1,3 +1,20 @@
+| **Stage**                | **Python App**                                                              | **Java App**                         | **Node.js App**                                       |
+| ------------------------ | --------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------- |
+| **Code Checkout**        | `git checkout`                                                              | `git checkout`                       | `git checkout`                                        |
+| **Dependency Install**   | Not always required (simple apps) <br> or `pip install -r requirements.txt` | `mvn clean install` or `mvn package` | `npm install`                                         |
+| **Build Step**           | ❌ No build step (interpreted)                                               | ✅ Compile source via Maven           | ❌ No build step unless using TypeScript               |
+| **Unit Testing**         | ✅ `pytest`                                                                  | ✅ `mvn test`                         | ✅ `cucumber`, or other test runners (`jest`, `mocha`) |
+| **Code Coverage**        | Optional (`pytest-cov`)                                                     | ✅ `JaCoCo` integrated with Maven     | Optional (e.g., `nyc` with `mocha`)                   |
+| **Static Code Analysis** | ✅ `SonarQube`                                                               | ✅ `SonarQube`                        | ✅ `SonarQube`                                         |
+| **Security Scanning**    | ✅ `Nexus IQ` <br> ✅ `Checkmarx`                                             | ✅ `Nexus IQ` <br> ✅ `Checkmarx`      | ✅ `Nexus IQ` <br> ✅ `Checkmarx`                       |
+| **Test Reporting**       | `pytest` with JUnit XML output                                              | JUnit/TestNG reports                 | Cucumber reports (HTML, JSON, JUnit)                  |
+| **Packaging**            | Optional (Docker image, zip, etc.)                                          | JAR/WAR via Maven                    | Optional (Docker image or zip)                        |
+| **Deployment**           | Manual or automated                                                         | Manual or automated                  | Manual or automated                                   |
+
+
+
+
+
 # Jenkins (CI/CD)
 So, whenever I wanted to make some changes to the existing code and then I wanted to push it. Like I want to deploy to the relavant environment (dev). What I do is like I come into my IDE.Or like whatever application we used and once the code is pushed then we raise a merge request where a dev will be reviewing it and  So once I get an approval from developer the for the merge request and the merge is done. It gets into the development branch, if we wanted to deploy to the production environment on the master, again we need to request a merge in publishing to master (prod). Once it merged the Jenkins pipeline will be triggered. 
 
