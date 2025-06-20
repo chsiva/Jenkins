@@ -1,3 +1,5 @@
+Jenkins > Declarative pipeline with using shared libraries
+
 | **Stage**                | **Python App**                                                              | **Java App**                         | **Node.js App**                                       |
 | ------------------------ | --------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------- |
 | **Code Checkout**        | `git checkout`                                                              | `git checkout`                       | `git checkout`                                        |
@@ -12,7 +14,21 @@
 | **Deployment**           | Manual or automated                                                         | Manual or automated                  | Manual or automated                                   |
 
 
-
+| Feature / Aspect             | **Nexus IQ (NXIQ)**                                                                | **Twistlock (Prisma Cloud)**                                     |
+| ---------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+  **Supported Platforms**      | Any language with dependencies (Java, Python, Node, etc.)                          | Containers, Kubernetes, cloud infrastructure                     |
+| **Primary Focus**            | Software Composition Analysis (SCA)                                                | Container & Cloud Native Security                                |
+| **Scan Target**              | Source code dependencies (libraries/packages)                                      | Container images, hosts, serverless, Kubernetes                  |
+| **Scope**                    | Open-source vulnerabilities in application dependencies (Java, Python, Node, etc.) | Vulnerabilities in container images, runtime threats, compliance |
+| **Type of Scanning**         | Static analysis of dependencies & licenses                                         | Image static scan + runtime protection + compliance              |
+| **Integration Level**        | IDE, CI/CD pipeline (via CLI or plugins)                                           | CI/CD pipeline, container registries, runtime agents             |
+| **Container Image Scanning** | Limited or indirect (via dependency scanning)                                      | Full container image scanning (OS + app layers)                  |
+| **Runtime Security**         | No                                                                                 | Yes — protects running containers & hosts                        |
+| **Policy Management**        | License, security policy enforcement                                               | Security, compliance, runtime policy enforcement                 |
+| **Vulnerability Sources**    | CVE databases + proprietary Nexus Intelligence                                     | CVE databases + runtime threat intelligence                      |
+| **Licensing Check**          | Yes                                                                                | No                                                               |
+| **Typical Users**            | Developers, security teams focusing on dependency risks                            | DevOps, SecOps teams managing container/cloud security           |
+| **Fail Build on Violation**  | Yes, based on policy setup                                                         | Yes, based on vulnerability or compliance rules                  |
 
 
 # Jenkins (CI/CD)
