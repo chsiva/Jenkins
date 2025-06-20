@@ -34,6 +34,7 @@ Jenkins > Declarative pipeline with using shared libraries
 Veracode is a full-stack application security platform combining SAST, DAST, and SCA, mostly SaaS-based and focused on enterprise security.
 
 
+
 Checkmarx specializes in SAST, excellent for deep source code security analysis.
 
 
@@ -44,6 +45,15 @@ Nexus IQ focuses on open-source dependency security and license compliance.
 
 
 They are often used together in mature pipelines to cover code quality, security, and open-source risks comprehensively.
+
+
+| Aspect                                                                | Does Veracode Cover It? | Notes                                                                                            |
+| --------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------ |
+| **Code Quality**                                                      | ❌ Not a primary focus   | Veracode focuses on security, not general code quality metrics like SonarQube does               |
+| **Static Application Security Testing (SAST)**                        | ✅ Yes                   | Scans source code or binaries for security vulnerabilities                                       |
+| **Dynamic Application Security Testing (DAST)**                       | ✅ Yes                   | Tests running applications for security issues (e.g., web app scanning)                          |
+| **Software Composition Analysis (SCA) / Third-party Dependency Scan** | ✅ Yes                   | Identifies vulnerabilities in open-source libraries and dependencies                             |
+| **Container Image Scanning**                                          | ❌ Limited / No          | Veracode primarily focuses on application code and dependencies, not container images themselves |
 
 
 # Jenkins (CI/CD)
